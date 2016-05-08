@@ -1,0 +1,115 @@
+body {
+	background-color: $black;
+}
+.wrapper {
+	max-width: 808px;
+	width: 100%;
+	margin: 0 auto;
+	outline: 1px solid black;
+	overflow: hidden;
+	background-color: $white;
+}
+.page-title {
+	font-size: 1.8em;
+}
+
+.header {
+	background-color: black;
+	color: $primaryColor;
+}
+.heading {
+	background-color: $menuPink;
+	width: 100%;
+}
+
+.logo {
+	width: 70%;
+	float: left;
+	display: block;
+}
+
+.mobile-toggle {
+	width: 30%;
+	float: left;
+	text-align: right;
+}
+.inner {
+	padding: 10px;
+	@include clearfix;
+}
+.slogan {
+	display: none;
+}
+.menu-container {
+	display: none;
+}
+.header_image {
+	width: 100%;
+	@include bgimg;
+	background-image: url('../src/img/header.jpg');
+	max-height: 200px;
+	min-height: 100px;
+}
+.page-container {
+	padding: 5%;
+}
+
+.flowers {
+	@include clearfix;
+	margin: 0 auto;
+	.flower {
+		width: 48%;
+		float: left;
+		height: 300px;
+		position: relative;
+		margin: 1%;
+
+		.bg-image {
+			@include bgimg;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		.red_rose {
+			background-image: url('../src/img/red_rose.jpg');
+		}
+		.yellow_rose {
+			background-image: url('../src/img/yellow_rose.jpg');
+		}
+		.pink_rose {
+			background-image: url('../src/img/pink_rose.jpg');
+		}
+		.white_rose {
+			background-image: url('../src/img/white_rose.jpg');
+		}
+		.flower-text {
+			position: absolute;
+			widows: 100%;
+			top: 0;
+			left: 0;
+			width: 100%;
+			.heading {
+				background-color: transparentize($primaryColor, 0.3);
+				text-align: center;
+				min-height: 23%;
+				padding-top: 5%;
+				padding-bottom: 10%;
+				color: $white;
+				font-size: 1.7em;
+			}
+			.text {
+				display: none;
+				background-color: transparentize($primaryColor, 0.3);
+			}
+		}
+	}
+}
+.footer {
+	background-color: $black;
+}
+
+#box {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+}
